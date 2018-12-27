@@ -3,21 +3,33 @@
   box-sizing: border-box;
 }
 
+/* html, body {
+  height: 100%;
+} */
+
 /* Sections */
 .section-container {
   margin: 0 auto;
   padding-bottom: 80px;
 }
 
-.section-container-gray-bg {
-background: #f8f8f8;
-}
-
+/* About Me */
 #about {
+  height: 100vh;
   margin-top: 5rem!important;
-  /* padding-bottom: 3rem!important; */
 }
 
-p {
-  color: brown;
+/* Portfolio */
+.thumbnail {
+  border: 2px solid #000;
+  border-radius: 5px;
+  box-shadow: 4px 4px 2px #222;
+}
+
+.caption {
+  text-align: center;
+}
+
+#app-name > a {
+  text-decoration: none;
 }
