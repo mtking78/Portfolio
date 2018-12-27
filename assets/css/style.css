@@ -1,0 +1,23 @@
+/* Global */
+* {
+  box-sizing: border-box;
+}
+
+/* Sections */
+.section-container {
+  margin: 0 auto;
+  padding-bottom: 80px;
+}
+
+.section-container-gray-bg {
+background: #f8f8f8;
+}
+
+#about {
+  margin-top: 5rem!important;
+  /* padding-bottom: 3rem!important; */
+}
+
+p {
+  color: brown;
+}
