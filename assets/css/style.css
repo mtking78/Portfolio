@@ -3,27 +3,57 @@
   box-sizing: border-box;
 }
 
-/* html, body {
+html, body {
   height: 100%;
-} */
+}
 
 /* Sections */
 .section-container {
   margin: 0 auto;
   padding-bottom: 80px;
+  text-align: center;
 }
 
 /* About Me */
+.bgimg-1 {
+  background-image: url(../images/img_parallax.jpg);
+  min-height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Use this info to center a div within bgimg */
+/* .caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+} */
+
 #about {
   height: 100vh;
-  margin-top: 5rem!important;
+  padding-top: 60px;
+  /* margin-top: 6rem!important; */
 }
 
 /* Portfolio */
+#portfolio {
+  padding-top: 80px;
+}
+
+.portfolio-title {
+  text-align: center;
+}
+
 .thumbnail {
   border: 2px solid #000;
   border-radius: 5px;
   box-shadow: 4px 4px 2px #222;
+  margin-bottom: 2rem;
+  visibility: hidden;
 }
 
 .caption {
@@ -32,4 +62,14 @@
 
 #app-name > a {
   text-decoration: none;
+}
+
+/* Contact Me */
+
+/* Footer */
+footer {
+  text-align: center;
+  background-color: #343a40;
+  color: #ddd;
+  padding: 40px;
 }
