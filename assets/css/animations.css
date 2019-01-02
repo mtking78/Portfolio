@@ -11,7 +11,7 @@
 }
 @keyframes floating {
 	0% {
-		transform: translateY(0%);
+    transform: translateY(0%);
 	}
 	50% {
 		transform: translateY(15%);
@@ -82,19 +82,19 @@
 	}
 }
 
-.stretchRight{
+/* .stretchRight{
 	animation-name: stretchRight;
-	-webkit-animation-name: stretchRight;	
+	-webkit-animation-name: stretchRight;
 
-	animation-duration: 1.5s;	
+	animation-duration: 1.5s;
 	-webkit-animation-duration: 1.5s;
 
-	animation-timing-function: ease-out;	
-	-webkit-animation-timing-function: ease-out;	
+	animation-timing-function: ease-out;
+	-webkit-animation-timing-function: ease-out;
 
 	transform-origin: 0% 0%;
 	-ms-transform-origin: 0% 0%;
-	-webkit-transform-origin: 0% 0%; 		
+	-webkit-transform-origin: 0% 0%;
 }
 
 @keyframes stretchRight {
@@ -112,13 +112,13 @@
 	}
 	100% {
 		transform: scaleX(0.98);
-	}				
+	}
 	80% {
 		transform: scaleX(1.01);
 	}
 	100% {
 		transform: scaleX(1);
-	}							
+	}
 }
 
 @-webkit-keyframes stretchRight {
@@ -136,11 +136,11 @@
 	}
 	100% {
 		-webkit-transform: scaleX(0.98);
-	}				
+	}
 	80% {
 		-webkit-transform: scaleX(1.01);
 	}
 	100% {
 		-webkit-transform: scaleX(1);
-	}		
-}
+	}
+} */
