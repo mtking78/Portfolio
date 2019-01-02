@@ -1,10 +1,20 @@
 /* Global */
 * {
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 
 html, body {
   height: 100%;
+}
+
+.navbar {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.19), 0 6px 10px rgba(0, 0, 0, 0.23);
+}
+
+.navbar .nav-link {
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 /* Sections */
@@ -15,23 +25,30 @@ html, body {
 }
 
 /* About Me */
+.introduction-container {
+  text-align: center;
+  position: relative;
+  top: 200px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 36px;
+  letter-spacing: 0.4pc;
+  color: #fff;
+}
+
+.introduction-container .scroll-link {
+  font-size: 3rem;
+  color: #fff;
+  line-height: 5;
+}
+
 .bgimg-1 {
-  background-image: url(../images/img_parallax.jpg);
+  background-image: url(../images/bg1.jpg);
   min-height: 100%;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-
-/* Use this info to center a div within bgimg */
-/* .caption {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  width: 100%;
-  text-align: center;
-} */
 
 #about {
   height: 100vh;
@@ -49,22 +66,66 @@ html, body {
 }
 
 .thumbnail {
+  visibility: hidden;
   border: 2px solid #000;
   border-radius: 5px;
-  box-shadow: 4px 4px 2px #222;
   margin-bottom: 2rem;
-  visibility: hidden;
+  box-shadow: none;
+  -webkit-transition: box-shadow 0.5s ease-in-out;
+  -moz-transition: box-shadow 0.5s ease-in-out;
+  -o-transition: box-shadow 0.5s ease-in-out;
+  transition: box-shadow 0.5s ease-in-out;
+}
+
+.thumbnail:hover {
+  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.3), 
+  -10px 8px 15px rgba(0, 0, 0, 0.3), 10px 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.thumbnail img {
+  opacity: 0.8;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.thumbnail img:hover {
+  opacity: 1;
 }
 
 .caption {
   text-align: center;
 }
 
-#app-name > a {
+#app-name a {
+  color: #343a40;
   text-decoration: none;
 }
 
+#app-name a:hover {
+  color: #f67;
+  font-weight: 600;
+}
+
 /* Contact Me */
+.contact-links {
+  display: inline;
+}
+
+.contact-links a {
+  padding: 20px;
+  color: #343a40;
+  -webkit-transition: color 0.5s ease-out;
+  -moz-transition: color 0.5s ease-out;
+  -o-transition: color 0.5s ease-out;
+  transition: color 0.5s ease-out;
+}
+
+.contact-links a:hover{
+  color: #f67;
+  text-decoration: none;
+}
 
 /* Footer */
 footer {
@@ -72,4 +133,18 @@ footer {
   background-color: #343a40;
   color: #ddd;
   padding: 40px;
+}
+
+footer .scroll-link {
+  font-size: 3rem;
+  color: #ddd;
+}
+
+@media (max-width: 480px) {
+  .introduction-container {
+      font-size: 28px;
+  }
+  .introduction-container .scroll-link {
+    line-height: 3;
+  }
 }
