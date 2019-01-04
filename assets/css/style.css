@@ -23,14 +23,48 @@ html, body {
 }
 
 /* Sections */
+.section-title h2 {
+  text-align: center;
+  color: #344;
+  font-size: 3em;
+}
+
+hr {
+  max-width: 200px;
+  border: 0;
+  border-radius: 2px;
+  height: 3px;
+  background: #074;
+  background-image: linear-gradient(to right, rgb(129, 180, 123), #074, rgba(129, 180, 123));
+}
+
 .section-container {
   margin: 0 auto;
   padding-bottom: 80px;
   text-align: center;
 }
 
-/* Intro Screen */
+.btn {
+  border-radius: 300px;
+  padding: 1rem 2rem;
+  margin: 0 auto;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 700;
+  color: #fff;
+  background-color: rgb(34, 163, 34);
+  -webkit-transition: background-color 0.5s ease-in-out;
+  -moz-transition: background-color 0.5s ease-in-out;
+  -o-transition: background-color 0.5s ease-in-out;
+  transition: background-color 0.5s ease-in-out;
+}
 
+.btn:hover {
+  color: #fff;
+  background-color: #074;
+}
+
+/* Intro Screen */
 .introduction-container {
   text-align: center;
   position: relative;
@@ -56,10 +90,6 @@ html, body {
   background-size: cover;
 }
 /* About Me */
-.about-title {
-  text-align: center;
-}
-
 #about {
   height: 100vh;
   padding-top: 80px;
@@ -76,10 +106,6 @@ html, body {
   padding-top: 80px;
 }
 
-.portfolio-title {
-  text-align: center;
-}
-
 .thumbnail {
   visibility: hidden;
   border: 2px solid #000;
@@ -93,8 +119,7 @@ html, body {
 }
 
 .thumbnail:hover {
-  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.3), 
-  -10px 8px 15px rgba(0, 0, 0, 0.3), 10px 8px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.3), -10px 8px 15px rgba(0, 0, 0, 0.3), 10px 8px 15px rgba(0, 0, 0, 0.3);
 }
 
 .thumbnail img {
@@ -124,11 +149,25 @@ html, body {
 }
 
 /* Contact Me */
+#contact {
+  /* height: 100vh; */
+  padding-top: 80px;
+}
+
 .contact-links {
+  text-decoration: none;
+  color: #074;
+}
+
+.contact-links:hover {
+  color: #074;
+}
+
+.contact-icons {
   display: inline;
 }
 
-.contact-links a {
+.contact-icons a {
   padding: 20px;
   color: #343a40;
   -webkit-transition: color 0.5s ease-out;
@@ -137,7 +176,7 @@ html, body {
   transition: color 0.5s ease-out;
 }
 
-.contact-links a:hover{
+.contact-icons a:hover {
   color: #f67;
   text-decoration: none;
 }
