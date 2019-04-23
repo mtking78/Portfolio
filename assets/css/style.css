@@ -91,14 +91,19 @@ hr {
 }
 /* About Me */
 #about {
-  height: 100vh;
+  /* height: 100vh; */
   padding-top: 80px;
-  overflow-x: scroll;
+  /* overflow-x: scroll; */
   /* margin-top: 6rem!important; */
 }
 
 .img-fluid {
   border-radius: 10px;
+  box-shadow: 0 10px 6px -6px #777;
+}
+
+.about-box {
+  margin-top: 1rem;
 }
 
 /* Portfolio */
@@ -194,11 +199,15 @@ footer .scroll-link {
   color: #ddd;
 }
 
+/* Media Queries */
 @media (max-width: 480px) {
   .introduction-container {
       font-size: 28px;
   }
   .introduction-container .scroll-link {
     line-height: 3;
+  }
+  .about-box-text p {
+    font-size: 12px;
   }
 }
